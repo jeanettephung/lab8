@@ -14,7 +14,8 @@ function statusChangeCallback(response) {
 }
 
 function changeUser(response) {
+	console.log(response);
 	$(".facbeookLogin").hide();
   $("#name").html(response["first_name"]);
-	$("#photo").attr("src", response["first_name"]);
+	$("#photo").attr("src", response["picture"]);
 }
